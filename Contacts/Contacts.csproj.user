@@ -24,7 +24,7 @@
           <SQLDebugging>False</SQLDebugging>
           <ExternalProgram>
           </ExternalProgram>
-          <StartExternalURL>http://localhost/EvolentContacts/api/EvolentContacts/GetAllEvolentContacts</StartExternalURL>
+          <StartExternalURL>http://localhost/Contacts/api/Contacts/GetAllContacts</StartExternalURL>
           <StartCmdLineArguments>
           </StartCmdLineArguments>
           <StartWorkingDirectory>

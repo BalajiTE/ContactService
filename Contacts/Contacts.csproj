@@ -179,13 +179,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\RequriedEitherValidator.cs" />
-    <Compile Include="Migrations\201808011046384_InitialCreate.cs" />
-    <Compile Include="Migrations\201808011046384_InitialCreate.Designer.cs">
-      <DependentUpon>201808011046384_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808011048341_InitialCreate1.cs" />
-    <Compile Include="Migrations\201808011048341_InitialCreate1.Designer.cs">
-      <DependentUpon>201808011048341_InitialCreate1.cs</DependentUpon>
+    <Compile Include="Migrations\201808171110023_InitialCatalog.cs" />
+    <Compile Include="Migrations\201808171110023_InitialCatalog.Designer.cs">
+      <DependentUpon>201808171110023_InitialCatalog.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EntityBase.cs" />
@@ -208,13 +204,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808011046384_InitialCreate.resx">
-      <DependentUpon>201808011046384_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808011048341_InitialCreate1.resx">
-      <DependentUpon>201808011048341_InitialCreate1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808171110023_InitialCatalog.resx">
+      <DependentUpon>201808171110023_InitialCatalog.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -232,7 +224,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>19840</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/EvolentContacts</IISUrl>
+          <IISUrl>http://localhost/Contacts</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

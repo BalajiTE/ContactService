@@ -3,12 +3,12 @@ namespace EvolentContacts.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class InitialCatalog : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.EvolentContact",
+                "dbo.Contact",
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
@@ -26,7 +26,7 @@ namespace EvolentContacts.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.EvolentContact");
+            DropTable("dbo.Contact");
         }
     }
 }

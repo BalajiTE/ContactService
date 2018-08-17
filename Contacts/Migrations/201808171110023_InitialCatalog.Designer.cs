@@ -6,14 +6,14 @@ namespace EvolentContacts.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
+    public sealed partial class InitialCatalog : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCatalog));
         
         string IMigrationMetadata.Id
         {
-            get { return "201808030833339_InitialCreate"; }
+            get { return "201808171110023_InitialCatalog"; }
         }
         
         string IMigrationMetadata.Source

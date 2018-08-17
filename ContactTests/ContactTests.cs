@@ -153,7 +153,7 @@ namespace ContactsTests
         #region CRUD operation test cases
 
         [TestMethod]
-        public void GetAllContactssTest()
+        public void GetAllContactsTest()
         {
             var mockContext = new Mock<ContactsContext>();
 
@@ -179,7 +179,7 @@ namespace ContactsTests
         }
 
         [TestMethod]
-        public void GetAllActiveContactssTest()
+        public void GetAllActiveContactsTest()
         {
             var mockContext = new Mock<ContactsContext>();
 
@@ -205,7 +205,7 @@ namespace ContactsTests
         }
 
         [TestMethod]
-        public void GetAllInActiveContactssTest()
+        public void GetAllInActiveContactsTest()
         {
             var mockContext = new Mock<ContactsContext>();
 
@@ -231,7 +231,7 @@ namespace ContactsTests
         }
 
         [TestMethod]
-        public void GetContactssForTest()
+        public void GetContactsForTest()
         {
             var mockContext = new Mock<ContactsContext>();
 
@@ -351,7 +351,7 @@ namespace ContactsTests
 
         IQueryable<Contact> GetEvolventContactsMock()
         {
-            var ContactssMock = new List<Contact>
+            var ContactsMock = new List<Contact>
                 {
                     new Contact() { ID = 1, FirstName = "abcTest", LastName = "abcTest", Email = "abcTest@gmail.com",
                                           Phone = "1111111111", Status = true, CreatedDate = DateTime.Now},
@@ -359,16 +359,16 @@ namespace ContactsTests
                                           Phone = "2222222222", Status = true, CreatedDate = DateTime.Now}
                 }.AsQueryable();
 
-            return ContactssMock;
+            return ContactsMock;
         }
         
-        private static Mock<DbSet<Contact>> MockSet(IQueryable<Contact> ContactssMock)
+        private static Mock<DbSet<Contact>> MockSet(IQueryable<Contact> ContactsMock)
         {
             var mockSet = new Mock<DbSet<Contact>>();
-            mockSet.As<IQueryable<Contact>>().Setup(m => m.Provider).Returns(ContactssMock.Provider);
-            mockSet.As<IQueryable<Contact>>().Setup(m => m.Expression).Returns(ContactssMock.Expression);
-            mockSet.As<IQueryable<Contact>>().Setup(m => m.ElementType).Returns(ContactssMock.ElementType);
-            mockSet.As<IQueryable<Contact>>().Setup(m => m.GetEnumerator()).Returns(ContactssMock.GetEnumerator());
+            mockSet.As<IQueryable<Contact>>().Setup(m => m.Provider).Returns(ContactsMock.Provider);
+            mockSet.As<IQueryable<Contact>>().Setup(m => m.Expression).Returns(ContactsMock.Expression);
+            mockSet.As<IQueryable<Contact>>().Setup(m => m.ElementType).Returns(ContactsMock.ElementType);
+            mockSet.As<IQueryable<Contact>>().Setup(m => m.GetEnumerator()).Returns(ContactsMock.GetEnumerator());
             return mockSet;
         }
 
