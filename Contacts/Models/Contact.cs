@@ -22,8 +22,5 @@ namespace Contacts.Models
 
         [RegularExpression(@"^([0-9]{10})$", ErrorMessage = "Invalid Phone Number")]
         public string Phone { get; set; }
-
-
-
     }
 }
